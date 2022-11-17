@@ -16,10 +16,10 @@ if (process.env.PORT){
 ///#####################################################
 ///#######          App Use          #############
 ///####################################################
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({extended:false}));
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
-
+app.use(express.json());
 
 ///#####################################################
 ///#######          Import Seed           #############
