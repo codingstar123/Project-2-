@@ -124,5 +124,5 @@ module.exports = [
     type: "Weight Training",
     duration: "25 minutes",
     equipment: "dumbells, barbell, waterbottles, or your body",
-  },
+  }
 ]
