@@ -26,7 +26,7 @@ app.use(express.json());
 ///####################################################
 app.get('/seed',(req,res)=>{
   Exercise.create(Seed,(err,data)=>{
-    res.redirect('/')
+    res.send(data)
   })
 })
 
@@ -38,7 +38,7 @@ app.get('/seed',(req,res)=>{
 
 ///#######        1 Index Route           #############
 app.get('/', (req,res)=>{
-  res.send('hello world')
+  res.send('Hello?')
 })
 ///#######        2 Show Route           #############
 
