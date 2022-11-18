@@ -6,6 +6,7 @@
     <title>Index Page</title>
   </head>
   <body>
+    <!-- A Sticky Header that will be the same for all pages. by doing it as partials.  -->
     <!-- Top part of home page -->
     <div class="home-image">
       <div class="home-text">
@@ -13,7 +14,16 @@
         <button id="joinBtn">Join Now</button>
       </div>
     </div>
+    <!-- The part to show the location of the gym, google map API -->
+    <div class="findLocation">
+      <div class="findLocation-text">
+        <p>BEST GYM EVER</p>
+        <h1>The Star Location</h1>
+        <button id="locationBtn">FIND LOCATION</button>
+      </div>
+    </div>
 
+    <!-- here is the seperation btw top and bottom -->
     <h1>Welcome to Star Fitness</h1>
 
     <!-- Below is the exercise stuff that will show on the home page -->
@@ -22,13 +32,14 @@
         <div class="individual">
           <a href="/<%=data[i]._id%>"><%=data[i].name%></a>
         </div>
+        
         <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
           <input type="submit" value="Delete">
         </form>
         <button><a href="/<%=data[i].id%>/edit">Edit</a></button>
       <% } %>
-      <button><a href="/new">Create New Exercise</a></butotn>
     </div>
+    <button><a href="/new">Create New Exercise</a></butotn>
     <!-- Above is the while Exercie stuff -->
 
   </body>

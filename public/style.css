@@ -2,17 +2,17 @@ body, html{
   height:100vh;
   margin:0,
 }
-
+/*  =====================================================*/
+/* =============TOP AREA OF THE GYM PAGE  =================*/
+/*  ====================================================*/
 #homeslogan{
   font-size: 3em;
 }
-
 #joinBtn{
   font-size:2em;
   background: white;
   color: rgba(101, 101, 101, 1);
 }
-
 #joinBtn:hover {
   background-color:rgba(101, 101, 101, 1);
   color: white;
@@ -29,7 +29,6 @@ Using flex to center the text inside the div */
   justify-content: center;
   align-items: center;
 }
-
 /* centering the text within the div */
 .home-text {
   display:flex;
@@ -37,4 +36,51 @@ Using flex to center the text inside the div */
   align-items: center;
   color: white;
 }
-/* https://www.w3schools.com/howto/howto_css_hero_image.asp */
+/* by displaying flex, this div connects to the top with no gap */
+.findLocation{
+  height:30%;
+  width:100%;
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top:1%; */
+}
+.findLocation-text{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+}
+#locationBtn{
+  background: white;
+  color: rgba(101, 101, 101, 1);
+}
+#locationBtn:hover {
+  background-color:rgba(101, 101, 101, 1);
+  color: white;
+}
+
+/*  =====================================================*/
+/* =============CRUD OF THE GYM PAGE  =================*/
+/*  ====================================================*/
+.container{
+  height:30%;
+  /* background-color:; */
+  display: flex;
+  margin: 2%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+
+
+.individual{
+  /* background-color:lightblue; */
+  margin: 2%;
+  height: 10%;
+  width: 25%;
+  display:flex;
+  border: 1px solid grey;
+}
