@@ -40,7 +40,9 @@ app.get('/seed',(req,res)=>{
 
 ///#######        1 Index Route           #############
 app.get('/', (req,res)=>{
-  res.send('Hello?')
+  Exercise.find({},(req,res)=>{
+      res.render('index.ejs', {data:allExercise})
+  })
 })
 ///#######        2 Show Route           #############
 
