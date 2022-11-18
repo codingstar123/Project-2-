@@ -45,7 +45,11 @@ app.get('/', (req,res)=>{
   })
 })
 ///#######        2 Show Route           #############
-
+app.get('/:id', (req,res)=>{
+  Exercise.findById(req.params.id,(err,allExercise)=>{
+      res.render('show.ejs', {data:allExercise})
+  })
+})
 
 ///#######        4 Create Route           #############
 
