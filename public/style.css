@@ -1,3 +1,40 @@
-h1{
-  background-color: lightblue; 
+body, html{
+  height:100vh;
+  margin:0,
 }
+
+#homeslogan{
+  font-size: 3em;
+}
+
+#joinBtn{
+  font-size:2em;
+  background: white;
+  color: rgba(101, 101, 101, 1);
+}
+
+#joinBtn:hover {
+  background-color:rgba(101, 101, 101, 1);
+  color: white;
+}
+/* liner-gradient rgba, a- makes the image transparent
+Using flex to center the text inside the div */
+.home-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("https://melbournesportscentres.com.au/gym-wellness/wp-content/uploads/sites/6/2020/07/Gym-Wellness_Gym-Membership-scaled.jpg");
+  height: 50%;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* centering the text within the div */
+.home-text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+/* https://www.w3schools.com/howto/howto_css_hero_image.asp */

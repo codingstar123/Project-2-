@@ -2,10 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
     <title>Index Page</title>
   </head>
   <body>
-    <h1>Home Page</h1>
+    <!-- Top part of home page -->
+    <div class="home-image">
+      <div class="home-text">
+        <h1 id="homeslogan">Shoot For The Star</h1>
+        <button id="joinBtn">Join Now</button>
+      </div>
+    </div>
+
+    <h1>Welcome to Star Fitness</h1>
+
+    <!-- Below is the exercise stuff that will show on the home page -->
     <div class="container">
       <% for(let i=0; i<data.length; i++){%>
         <div class="individual">
@@ -16,8 +27,9 @@
         </form>
         <button><a href="/<%=data[i].id%>/edit">Edit</a></button>
       <% } %>
-
+      <button><a href="/new">Create New Exercise</a></butotn>
     </div>
-    <button><a href="/new">Create New Exercise</a></butotn>
+    <!-- Above is the while Exercie stuff -->
+
   </body>
 </html>
