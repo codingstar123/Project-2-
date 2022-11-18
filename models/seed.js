@@ -1,3 +1,4 @@
+////inorder to have the video playable on the website. need to change add "embed"before the id. 
 module.exports = [
   {
     name: "Fullbody HIIT",

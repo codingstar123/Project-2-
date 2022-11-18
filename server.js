@@ -26,7 +26,7 @@ app.use(methodOverride('_method'));
 ///####################################################
 app.get('/seed',(req,res)=>{
   Exercise.create(Seed,(err,data)=>{
-    res.send(data)
+    res.redirect('/')
   })
 })
 
