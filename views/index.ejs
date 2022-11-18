@@ -11,7 +11,10 @@
         <div class="individual">
           <a href="/<%=data[i]._id%>"><%=data[i].name%></a>
         </div>
-
+        <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
+          <input type="submit" value="Delete">
+        </form>
+        <button><a href="/<%=data[i].id%>/edit">Edit</a></button>
       <% } %>
 
     </div>

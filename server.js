@@ -60,11 +60,24 @@ app.post('/',(req,res)=>{
   })
 })
 ///#######        5 Destroy Route           #############
-
+app.delete('/:id',(req,res)=>{
+  Exercise.findByIdAndRemove(req.params.id, (err,data)=>{
+    res.redirect('/')
+  })
+})
 ///#######        6 Edit Route           #############
+app.get('/:id/edit',(req,res)=>{
+  Exercise.findById(req.params.id,(err,foundExercise)=>{
+    res.render('edit.ejs',{data: foundExercise});
+  })
+})
 
 ///#######        7 Update Route           #############
-
+app.put('/:id',(req,res)=>{
+  Exercise.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err,updated)=>{
+    res.redirect('/')
+  })
+})
 
 
 
