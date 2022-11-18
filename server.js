@@ -8,7 +8,7 @@ const methodOverride = require('method-override');
 const Exercise = require('./models/schema.js');
 const Seed = require('./models/seed.js');
 
-let PORT = 3003;
+let PORT = 3000;
 if (process.env.PORT){
   PORT = process.env.PORT
 }
@@ -40,7 +40,7 @@ app.get('/seed',(req,res)=>{
 
 ///#######        1 Index Route           #############
 app.get('/', (req,res)=>{
-  Exercise.find({},(req,res)=>{
+  Exercise.find({},(err,allExercise)=>{
       res.render('index.ejs', {data:allExercise})
   })
 })
