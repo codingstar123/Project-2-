@@ -16,7 +16,7 @@ if (process.env.PORT){
 ///#####################################################
 ///#######          App Use          #############
 ///####################################################
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
 app.use(express.json());
@@ -70,3 +70,7 @@ app.listen(PORT, ()=>{
 mongoose.connect('mongodb+srv://star:EPAdPbWQjiTDYWsC@exerciseproject.4ry2dxj.mongodb.net/?retryWrites=true&w=majority',()=>{
   console.log('connected to mongo');
 })
+
+// mongoose.connect('mongodb://localhost:27017/exercise',()=>{
+//   console.log("Connection is connected");
+// });
