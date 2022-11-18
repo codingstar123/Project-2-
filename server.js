@@ -18,8 +18,6 @@ if (process.env.PORT){
 ///####################################################
 app.use(express.static('public'));
 app.use(express.urlencoded({extended:true}));
-// app.use(express.static('public'));
-// app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(methodOverride('_method'));
 
@@ -36,7 +34,11 @@ app.get('/seed',(req,res)=>{
 ///#####################################################
 ///#######          Routes           #############
 ///####################################################
+
 ///#######        3 New Route          #############
+app.get('/new', (req,res)=>{
+  res.render('new.ejs')
+})
 
 ///#######        1 Index Route           #############
 app.get('/', (req,res)=>{
@@ -52,7 +54,11 @@ app.get('/:id', (req,res)=>{
 })
 
 ///#######        4 Create Route           #############
-
+app.post('/',(req,res)=>{
+  Exercise.create(req.body, (err,createdExercise)=>{
+    res.redirect('/')
+  })
+})
 ///#######        5 Destroy Route           #############
 
 ///#######        6 Edit Route           #############
