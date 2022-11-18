@@ -67,7 +67,7 @@ app.listen(PORT, ()=>{
   console.log('listening...');
 })
 
-mongoose.connect('mongodb+srv://star:EPAdPbWQjiTDYWsC@exerciseproject.4ry2dxj.mongodb.net/?retryWrites=true&w=majority',()=>{
+mongoose.connect('mongodb+srv://star:ehQZBCgo7XijzdJc@exerciseproject.vifw6wq.mongodb.net/?retryWrites=true&w=majority',()=>{
   console.log('connected to mongo');
 })
 
