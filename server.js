@@ -5,10 +5,10 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const Exercise = require('./models/schema.js');
-const Seed = require('./models/seed.js');
+const test = require('./models/schema.js');
+const test1 = require('./models/seed.js');
 
-let PORT = 3000;
+let PORT = 3003;
 if (process.env.PORT){
   PORT = process.env.PORT
 }
@@ -16,17 +16,19 @@ if (process.env.PORT){
 ///#####################################################
 ///#######          App Use          #############
 ///####################################################
-app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
-app.use(methodOverride('_method'));
+app.use(express.urlencoded({extended:true}));
+// app.use(express.static('public'));
+// app.use(methodOverride('_method'));
 app.use(express.json());
+app.use(methodOverride('_method'));
 
 ///#####################################################
 ///#######          Import Seed           #############
 ///####################################################
 app.get('/seed',(req,res)=>{
-  Exercise.create(Seed,(err,data)=>{
-    res.send('HEY, it is working?')
+  test.create(test1,(err,data)=>{
+    res.send(data)
   })
 })
 
