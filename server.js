@@ -5,8 +5,8 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const test = require('./models/schema.js');
-const test1 = require('./models/seed.js');
+const Exercise = require('./models/schema.js');
+const Seed = require('./models/seed.js');
 
 let PORT = 3003;
 if (process.env.PORT){
@@ -27,7 +27,7 @@ app.use(methodOverride('_method'));
 ///#######          Import Seed           #############
 ///####################################################
 app.get('/seed',(req,res)=>{
-  test.create(test1,(err,data)=>{
+  Exercise.create(Seed,(err,data)=>{
     res.send(data)
   })
 })
