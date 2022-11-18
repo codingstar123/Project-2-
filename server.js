@@ -26,7 +26,7 @@ app.use(express.json());
 ///####################################################
 app.get('/seed',(req,res)=>{
   Exercise.create(Seed,(err,data)=>{
-    res.send(data)
+    res.send('HEY, it is working?')
   })
 })
 
