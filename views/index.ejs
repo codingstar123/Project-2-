@@ -18,25 +18,34 @@
     <div class="findLocation">
       <div class="findLocation-text">
         <p>BEST GYM EVER</p>
-        <h1>The Star Location</h1>
+        <h1 id="locationh1">The Star Location</h1>
         <button id="locationBtn">FIND LOCATION</button>
       </div>
     </div>
 
     <!-- here is the seperation btw top and bottom -->
-    <h1>Welcome to Star Fitness</h1>
+    <div class="welcome">
+      <h1>Welcome to Star Fitness</h1>
+      <p>Here are all free exercise you can try out</p>
+    </div>
 
     <!-- Below is the exercise stuff that will show on the home page -->
     <div class="container">
       <% for(let i=0; i<data.length; i++){%>
         <div class="individual">
           <a href="/<%=data[i]._id%>"><%=data[i].name%></a>
+          <div class="linkBtn">
+          <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
+            <input type="submit" value="Delete">
+          </form>
+          <button><a href="/<%=data[i].id%>/edit">Edit</a></button>
         </div>
-        
-        <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
+        </div>
+
+        <!-- <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
           <input type="submit" value="Delete">
         </form>
-        <button><a href="/<%=data[i].id%>/edit">Edit</a></button>
+        <button><a href="/<%=data[i].id%>/edit">Edit</a></button> -->
       <% } %>
     </div>
     <button><a href="/new">Create New Exercise</a></butotn>

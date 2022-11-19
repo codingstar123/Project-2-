@@ -36,6 +36,7 @@ Using flex to center the text inside the div */
   align-items: center;
   color: white;
 }
+
 /* by displaying flex, this div connects to the top with no gap */
 .findLocation{
   height:30%;
@@ -52,6 +53,9 @@ Using flex to center the text inside the div */
   align-items: center;
   color:white;
 }
+#locationh1{
+  margin-top:0;
+}
 #locationBtn{
   background: white;
   color: rgba(101, 101, 101, 1);
@@ -62,10 +66,19 @@ Using flex to center the text inside the div */
 }
 
 /*  =====================================================*/
+/* =============Welcome Part of Index Page  =================*/
+/*  ====================================================*/
+.welcome{
+  text-align: center;
+}
+
+
+
+
+/*  =====================================================*/
 /* =============CRUD OF THE GYM PAGE  =================*/
 /*  ====================================================*/
 .container{
-  height:30%;
   /* background-color:; */
   display: flex;
   margin: 2%;
@@ -73,14 +86,19 @@ Using flex to center the text inside the div */
   justify-content: space-around;
   align-items: center;
   border: 1px solid black;
+  background-color:black;
 }
 
 
 .individual{
   /* background-color:lightblue; */
   margin: 2%;
-  height: 10%;
-  width: 25%;
+  padding: 2%;
+  height: 200px;
+  width: 200px;
   display:flex;
   border: 1px solid grey;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image:linear-gradient(to top, red,orange, yellow);
 }
