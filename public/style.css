@@ -9,11 +9,11 @@ body, html{
   background-color: black;
   position: fixed;
   width:100%;
-  margin: auto;
   top:0; /* top 0 will set the div stick to the top */
+  right:0;
   height:5%;
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .header{
@@ -92,17 +92,13 @@ Using flex to center the text inside the div */
 .welcome{
   text-align: center;
 }
-
-
-
-
 /*  =====================================================*/
 /* =============CRUD OF THE GYM PAGE  =================*/
 /*  ====================================================*/
 .container{
   /* background-color:; */
   display: flex;
-  margin: 2%;
+  margin:0;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -122,4 +118,30 @@ Using flex to center the text inside the div */
   flex-direction: column;
   justify-content: space-between;
   background-image:linear-gradient(to top, red,orange, yellow);
+}
+#exercise-name{
+  color:black;
+  font-weight: bold;
+}
+
+/*  =====================================================*/
+/*  =======*********======SHOW PAGE =========*********========*/
+/*  ====================================================*/
+.show-page{
+  text-align: center;
+  background-image:linear-gradient(to top, red,orange, yellow);
+  margin-top:5%;
+}
+ul{
+  list-style: none;
+}
+.video-container{
+  background-color:black;
+  top:0;
+}
+.video{
+  height:600px;
+  width:80%;
+  margin:auto;
+  display:flex;
 }

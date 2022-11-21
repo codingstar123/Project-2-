@@ -2,18 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
     <title>Show Page</title>
   </head>
   <body>
-    <h1>Show Exercise</h1>
-    <ul>
-      <li>Name: <%=data.name%></li>
-      <li>Type: <%=data.type%></li>
-      <li>Duration: <%=data.duration%></li>
-      <li>Equipment: <%=data.equipment%></li>
-      <li>Link: <%=data.link%></li>
-    </ul>
-    <iframe src="<%=data.link%>"></iframe>
+    <%- include ('./partials/header.html') %>
+
+    <div class="show-page">
+      <h1>The Exercise</h1>
+      <ul>
+        <li>Name: <%=data.name%></li>
+        <li>Type: <%=data.type%></li>
+        <li>Duration: <%=data.duration%></li>
+        <li>Equipment: <%=data.equipment%></li>
+      </ul>
+    </div>
+
+    <div class="video-container">
+      <iframe src="<%=data.link%>" class="video"></iframe>
+    </div>
+
   </body>
 </html>
 

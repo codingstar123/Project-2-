@@ -5,18 +5,17 @@
     <link rel="stylesheet" href="/style.css">
     <title>Index Page</title>
   </head>
-  <header>
-    <div class="header-container">
-          <a href="#" class="header">Location</a>
-          <a href="#" class="header">About</a>
-          <a href="#" class="header">English</a>
-          <a href="#" class="header">Join Us</a>
-        <!-- another stretch goal to change all language -->
-      </div>
-    </div>
-  </header>
   <body>
     <!-- A Sticky Header that will be the same for all pages. by doing it as partials.  -->
+    <header>
+      <div class="header-container">
+            <a href="#" class="header">Location</a>
+            <a href="#" class="header">About</a>
+            <a href="#" class="header">English</a>
+            <a href="#" class="header">Join Us</a>
+        </div>
+      </div>
+    </header>
     <!-- Top part of home page -->
     <div class="home-image">
       <div class="home-text">
@@ -43,7 +42,7 @@
     <div class="container">
       <% for(let i=0; i<data.length; i++){%>
         <div class="individual">
-          <a href="/<%=data[i]._id%>"><%=data[i].name%></a>
+          <a href="/<%=data[i]._id%>" id="exercise-name"><%=data[i].name%></a>
           <div class="linkBtn">
           <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
             <input type="submit" value="Delete">
