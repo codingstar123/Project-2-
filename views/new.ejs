@@ -2,17 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
     <title>New Page</title>
   </head>
   <body>
+    <%- include ('./partials/header.html') %>
+    <div class="new-space">
+    </div>
     <h1>New Exercise</h1>
-    <form action="/" method="post">
-      <input type="text" name='name' placeholder="what's the name of the exercise?">
-      <input type="text" name='type' placeholder="what's type of exercise it is?">
-      <input type="text" name='duration' placeholder="how long is the exercise?">
-      <input type="text" name='equipment' placeholder="any equipment needed?">
-      <input type="text" name='link' placeholder="what's the link">
-      <input type="submit" value="Create New Exercise">
-    </form>
+    <div class="new-form">
+
+      <form action="/" method="post">
+        <input type="text" name='name' placeholder="what's the name of the exercise?">
+        <input type="text" name='type' placeholder="what's type of exercise it is?">
+        <input type="text" name='duration' placeholder="how long is the exercise?">
+        <input type="text" name='equipment' placeholder="any equipment needed?">
+        <input type="text" name='link' placeholder="what's the link">
+        <input type="submit" value="Create New Exercise">
+      </form>
+      
+    </div>
+    <%- include ('./partials/footer.html') %>
   </body>
 </html>

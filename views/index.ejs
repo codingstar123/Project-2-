@@ -44,23 +44,27 @@
         <div class="individual">
           <a href="/<%=data[i]._id%>" id="exercise-name"><%=data[i].name%></a>
           <div class="linkBtn">
-          <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
+          <form action="/<%=data[i]._id%>?_method=DELETE" method="post" >
             <input type="submit" value="Delete">
           </form>
           <button><a href="/<%=data[i].id%>/edit">Edit</a></button>
         </div>
         </div>
-
         <!-- <form action="/<%=data[i]._id%>?_method=DELETE" method="post">
           <input type="submit" value="Delete">
         </form>
         <button><a href="/<%=data[i].id%>/edit">Edit</a></button> -->
       <% } %>
     </div>
-    <button><a href="/new">Create New Exercise</a></butotn>
+    <div class="create-div">
+        <button id="create-btn"><a href="/new">Create New Exercise</a></butotn>
+    </div>
     <!-- Above is the while Exercie stuff -->
 
     <!-- The Extra Stuff Part -->
-    
+
+    <!-- Footer -->
+    <%- include ('./partials/footer.html') %>
+
   </body>
 </html>

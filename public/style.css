@@ -11,7 +11,7 @@ body, html{
   width:100%;
   top:0; /* top 0 will set the div stick to the top */
   right:0;
-  height:5%;
+  height:80px;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -25,7 +25,7 @@ body, html{
 .footer-container{
   background-color:black;
   width:100%;
-  padding:3em 0;
+  padding:3em 0 0 0;
   display:flex;
   justify-content: space-between;
 }
@@ -75,7 +75,7 @@ body, html{
 Using flex to center the text inside the div */
 .home-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("https://melbournesportscentres.com.au/gym-wellness/wp-content/uploads/sites/6/2020/07/Gym-Wellness_Gym-Membership-scaled.jpg");
-  height: 50%;
+  height: 40em;
   width:100%;
   background-position: center;
   background-size: cover;
@@ -93,7 +93,7 @@ Using flex to center the text inside the div */
 
 /* by displaying flex, this div connects to the top with no gap */
 .findLocation{
-  height:30%;
+  height:20em;
   width:100%;
   background-image:linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
   display: flex;
@@ -138,8 +138,6 @@ Using flex to center the text inside the div */
   border: 1px solid black;
   background-color:black;
 }
-
-
 .individual{
   /* background-color:lightblue; */
   margin: 2%;
@@ -152,10 +150,26 @@ Using flex to center the text inside the div */
   justify-content: space-between;
   background-image:linear-gradient(to top, red,orange, yellow);
 }
+
+}
 #exercise-name{
   color:black;
   font-weight: bold;
 }
+.create-div{
+ text-align: center;
+}
+#create-btn{
+  background: white;
+  font-size:1em;
+  padding: 2em;
+  margin-top: 1em;
+}
+/* #create-btn:hover {
+  background-color:rgba(101, 101, 101, 1);
+  color: white;
+} */
+/* i want to change the text color and the background while hover */
 
 /*  =====================================================*/
 /*  =======*********====== 2. SHOW PAGE =========*********========*/
@@ -201,6 +215,15 @@ ul{
 /*  =====================================================*/
 /*  =======*********====== 3. New Page =========*********========*/
 /*  ====================================================*/
+.new-space {
+  margin-top:5em;
+  width:100%;
+  height:5em;
+  background-image:linear-gradient(to top, red,orange,rgba(245, 191, 39, 0.8))
+}
+.new-form{
+  display:flex;
+}
 
 /*  =====================================================*/
 /*  =======*********====== 4. Create Page =========*********========*/
