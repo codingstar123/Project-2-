@@ -2,10 +2,16 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
     <title>Edit Page</title>
   </head>
   <body>
+    <%- include ('./partials/header.html') %>
+    <div class="edit-space">
+    </div>
+
     <h1>Edit Exercise</h1>
+
     <form action="/<%=data._id%>?_method=PUT" method="POST">
       <input type="text" name='name' value="<%=data.name%>">
       <input type="text" name='type' value="<%=data.type%>">
@@ -14,5 +20,7 @@
       <input type="text" name='link' value="<%=data.link%>">
       <input type="submit" value="Edit Exercise">
     </form>
+
+    <%- include ('./partials/footer.html') %>
   </body>
 </html>

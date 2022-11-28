@@ -39,13 +39,17 @@ app.get('/seed',(req,res)=>{
 app.get('/new', (req,res)=>{
   res.render('new.ejs')
 })
-
+///#######       Extra Routes          #############
+app.get('/location', (req,res)=>{
+  res.render('location.ejs')
+})
 ///#######        1 Index Route           #############
 app.get('/', (req,res)=>{
   Exercise.find({},(err,allExercise)=>{
       res.render('index.ejs', {data:allExercise})
   })
 })
+
 ///#######        2 Show Route           #############
 app.get('/:id', (req,res)=>{
   Exercise.findById(req.params.id,(err,allExercise)=>{
