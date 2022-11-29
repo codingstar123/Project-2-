@@ -2,9 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>location</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <h1>This is the Location website</h1>
+    <%- include ('./partials/header.html') %>
+    <div class="location-space">
+    </div>
+    <div class="location-page">
+      <h1>This is the Location website</h1>
+      <h2>Star Gym is located inside Hemenway Gymnasium</h2>
+    </div>
+    <p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15932.457256293377!2d-71.1267191074945!3d42.37701660949089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377418a05d6dd%3A0xd3705c42828f8f79!2sHemenway%20Gymnasium!5e0!3m2!1sen!2sus!4v1669675367544!5m2!1sen!2sus" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googlemap"></iframe>
+    </p>
+    <div class="location-adv">
+      <h2>We are rated one of the best gym in the world</h2>
+      <h2>Operating since 1900s</h2>
+    </div>
+    <div>
+      <img src="https://risingstarreviews.com/wp-content/uploads/yelp-business-reviews.jpg" height="250px" width="300px" alt="5star yelp rating!">
+      <img src="https://www.mortellarolaw.com/wp-content/uploads/2020/02/google-5-star-rating-png-14.png" height="250px" width="300px" alt="5star google rating!">
+    </div>
+    <%- include ('./partials/footer.html') %>
   </body>
 </html>
