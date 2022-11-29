@@ -248,3 +248,7 @@ ul{
   margin:4em;
   text-align: center;
 }
+.location-award {
+  display: flex;
+  justify-content: space-between; 
+}
