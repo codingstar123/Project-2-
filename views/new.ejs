@@ -9,9 +9,28 @@
     <%- include ('./partials/header.html') %>
     <div class="new-space">
     </div>
-    <h1>New Exercise</h1>
-    <div class="new-form">
+    <h1 id="showh1">#NO JUDGMENTS ZONE</h1>
 
+    <div class="philosophy-container">
+      <div class="left-box">
+        <img src="https://img.freepik.com/free-vector/body-positive-cartoon-illustration-with-plump-happy-human-characters-white_1284-61164.jpg?w=2000" width="256" height="256" alt="image">
+        <h4>POSITIVITY</h4>
+        <p>We work hard to get you where you wanted</p>
+      </div>
+      <div class="mid-box">
+        <img src="https://i.pinimg.com/236x/95/79/f8/9579f8fd6b64e45a534a4a87bb872d8b--teaching-culture-european-languages.jpg"  width="256" height="256"alt="image">
+        <h4>Inclusivity</h4>
+        <p>There is no one size fits all</p>
+      </div>
+      <div class="right-box">
+        <img src="https://wp.dailybruin.com/images/46794_web.sp.2.8.zumba.illoo.jpg" width="256" height="256" alt="image">
+        <h4>FUN</h4>
+        <p>We know that exercise is hard but we make it fun!</p>
+      </div>
+    </div>
+
+    <div class="new-form">
+      <h1>New Exercise</h1>
       <form action="/" method="post">
         <input type="text" name='name' placeholder="what's the name of the exercise?">
         <input type="text" name='type' placeholder="what's type of exercise it is?">
@@ -20,7 +39,17 @@
         <input type="text" name='link' placeholder="what's the link">
         <input type="submit" value="Create New Exercise">
       </form>
-      
+
+    </div>
+
+    <div class="location-adv">
+      <h2>We are rated one of the best gym in the world</h2>
+      <h2>Operating since 1900s</h2>
+    </div>
+    <div class=location-award>
+      <img src="https://www.bestgymaward.com/images/2022-GYM.png" height="250px" width="300px" alt="best gym award">
+      <img src="https://risingstarreviews.com/wp-content/uploads/yelp-business-reviews.jpg" height="250px" width="400px" alt="5star yelp rating!">
+      <img src="https://www.mortellarolaw.com/wp-content/uploads/2020/02/google-5-star-rating-png-14.png" height="250px" width="250px" alt="5star google rating!">
     </div>
     <%- include ('./partials/footer.html') %>
   </body>

@@ -221,6 +221,10 @@ ul{
   height:5em;
   background-image:linear-gradient(to top, red,orange,rgba(245, 191, 39, 0.8))
 }
+.new-form{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)) ;
+  padding: 1em 2em 3em 2em; 
+}
 /*  =====================================================*/
 /*  =======*********====== 6,7. Edit & Update Page =========*********========*/
 /*  ====================================================*/
@@ -250,5 +254,5 @@ ul{
 }
 .location-award {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
